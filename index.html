@@ -627,7 +627,7 @@
     };
 
     const BUILDING_DEFS = [
-      { id: 'job_agency',    title: 'Job Agency',     icon: '🏢', color: 0xfef08a, roof: 0xd97706, bgFile: 'Job agency.jpg',    signFile: null,                        jobKey: null },
+      { id: 'job_agency',    title: 'Job Agency',     icon: '🏢', color: 0xfef08a, roof: 0xd97706, bgFile: 'job centre.jpg',    signFile: null,                        jobKey: null },
       { id: 'law_court',     title: 'Law Court',      icon: '⚖️', color: 0xe2e8f0, roof: 0x475569, bgFile: 'Law Court.jpg',     signFile: 'Court Sign.png',            jobKey: 'lawyer' },
       { id: 'clinic',        title: 'The Clinic',     icon: '🏥', color: 0xffffff, roof: 0xef4444, bgFile: 'Clinic.jpg',        signFile: 'Clinic Sign.png',           jobKey: 'doctor' },
       { id: 'vet_clinic',    title: 'Vet Clinic',     icon: '🐾', color: 0xdcfce7, roof: 0x16a34a, bgFile: 'Vet BK.jpg',        signFile: 'VET Sign.png',              jobKey: 'vet' },
@@ -636,7 +636,7 @@
       { id: 'movie_studio',  title: 'Movie Studio',   icon: '🎬', color: 0xddd6fe, roof: 0x7c3aed, bgFile: 'Movie Set.jpg',     signFile: 'Movie Studio Sign.png',     jobKey: 'actor' },
       { id: 'space_station', title: 'Space Station',  icon: '🚀', color: 0xcbd5e1, roof: 0x2563eb, bgFile: 'Rocket Launch.jpg', signFile: 'Space.png',                 jobKey: 'astronaut' },
       { id: 'janitorial',    title: 'Janitorial Hub', icon: '🧹', color: 0xfef9c3, roof: 0xca8a04, bgFile: 'Janitorial.jpg',    signFile: 'Cleaning Service Sign.png', jobKey: 'cleaner' },
-      { id: 'photobooth',    title: 'Photo-Booth',    icon: '📸', color: 0xfecdd3, roof: 0xe11d48, bgFile: 'Job agency.jpg',    signFile: 'Photoland.png',             jobKey: null }
+      { id: 'photobooth',    title: 'Photo-Booth',    icon: '📸', color: 0xfecdd3, roof: 0xe11d48, bgFile: 'job centre.jpg',    signFile: 'Photoland.png',             jobKey: null }
     ];
 
     const NPCS = [
@@ -1423,7 +1423,7 @@
 
     function openJobAgencyModal() {
       modalTitle.textContent = '🏢 Job Agency';
-      modal2D.style.backgroundImage = `url("Backgrounds/Job agency.jpg")`;
+      modal2D.style.backgroundImage = `url("Backgrounds/job centre.jpg")`;
       modalBody.innerHTML = '';
 
       const currentSelectedObj = NPCS.find(n => n.id === selectedNpcId);
